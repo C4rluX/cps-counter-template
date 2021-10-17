@@ -1,4 +1,5 @@
 let cps = 0;
+console.log("test")
 
 document.getElementById("clickHere").addEventListener("click", function () { cps++; });
 
