@@ -1,9 +1,12 @@
-let cps = 0;
-console.log("test")
+document.body.onload = function () {
+    
+    let cps = 0;
 
-document.getElementById("clickHere").addEventListener("click", function () { cps++; });
+    document.getElementById("clickHere").addEventListener("click", function () { cps++; });
 
-setInterval(function () {
-    document.getElementById("cpsCounter").textContent = "CPS: " + cps;
-    cps = 0;
-}, 1000);
+    setInterval(function () {
+        document.getElementById("cpsCounter").textContent = "CPS: " + cps;
+        cps = 0;
+    }, 1000);
+    
+}
